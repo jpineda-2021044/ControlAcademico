@@ -1,0 +1,366 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "ControlAcademico",
+    "dateExported": "2024-03-05T05:49:17.275Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "6e248341-ffac-4596-9c29-2d5eba3829cb",
+            "name": "Class",
+            "containerId": "",
+            "created": "2024-03-05T04:45:16.493Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "b1983ffa-752f-4698-b552-ca8b9d1fa869",
+            "name": "Student",
+            "containerId": "",
+            "created": "2024-03-05T04:45:31.506Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "4b8edacd-cf35-460c-bd2a-c325a0e558ca",
+            "name": "Teacher",
+            "containerId": "",
+            "created": "2024-03-05T04:45:38.790Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "94613e92-58f7-4e1f-9836-6b9566313892",
+            "name": "User",
+            "containerId": "",
+            "created": "2024-03-05T05:19:14.056Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "196e01d6-697a-45d1-9f4c-36d9d172546a",
+            "colId": "b606b3ec-9384-468d-8c4b-03df2f0fa699",
+            "containerId": "6e248341-ffac-4596-9c29-2d5eba3829cb",
+            "name": "add",
+            "url": "class/save",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-05T04:46:14.666Z",
+            "modified": "2024-03-05T05:12:48.185Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Ingles"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Idioma Ingles"
+                    }
+                ]
+            },
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "b41849f8-86cd-4810-bd09-1352197184d0",
+            "colId": "b606b3ec-9384-468d-8c4b-03df2f0fa699",
+            "containerId": "6e248341-ffac-4596-9c29-2d5eba3829cb",
+            "name": "update",
+            "url": "class/update/65e5edc92c76e208da4edec4",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-05T04:46:23.003Z",
+            "modified": "2024-03-05T05:22:16.646Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzaWQiOiI2NWU2YWFkYmJlMzI0ZDA2MWVjOGExZDYiLCJlbWFpbCI6ImNhcmxvc0BnbWFpbC5jb20iLCJuYW1lIjoiQ2FybG9zIiwicm9sZSI6IlNUVURFTlQiLCJpYXQiOjE3MDk2MTYwOTksImV4cCI6MTcwOTYyNjg5OX0.yjSv24A1qJZOKm7OQWhvtd6NXvqCPpjos5P4PVeqwl0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Artes"
+                    }
+                ]
+            },
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "a20aa921-cffd-451a-924b-ef1fe4ce85ce",
+            "colId": "b606b3ec-9384-468d-8c4b-03df2f0fa699",
+            "containerId": "6e248341-ffac-4596-9c29-2d5eba3829cb",
+            "name": "delete",
+            "url": "class/delete/65e6a9d0a36c5a084c4f7745",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-03-05T04:46:30.029Z",
+            "modified": "2024-03-05T05:13:38.650Z",
+            "headers": [],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "af3b0cc7-763a-42fe-ad18-1f0a72547c2d",
+            "colId": "b606b3ec-9384-468d-8c4b-03df2f0fa699",
+            "containerId": "6e248341-ffac-4596-9c29-2d5eba3829cb",
+            "name": "search",
+            "url": "class/search",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-03-05T04:46:36.266Z",
+            "modified": "2024-03-05T05:01:28.529Z",
+            "headers": [],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "2893b3f9-87b2-4135-8417-29ea16af2c75",
+            "colId": "b606b3ec-9384-468d-8c4b-03df2f0fa699",
+            "containerId": "b1983ffa-752f-4698-b552-ca8b9d1fa869",
+            "name": "add",
+            "url": "student/register",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-03-05T04:46:47.518Z",
+            "modified": "2024-03-05T05:28:09.467Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "surname",
+                        "value": "Pinieda"
+                    },
+                    {
+                        "name": "age",
+                        "value": "12"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "65e5edc92c76e208da4edec4"
+                    },
+                    {
+                        "name": "email",
+                        "value": "jpineda@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "role",
+                        "value": "STUDENT"
+                    },
+                    {
+                        "name": "name",
+                        "value": "Federico"
+                    }
+                ]
+            },
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "dbe89920-4388-4991-aca1-b935cfa023c1",
+            "colId": "b606b3ec-9384-468d-8c4b-03df2f0fa699",
+            "containerId": "b1983ffa-752f-4698-b552-ca8b9d1fa869",
+            "name": "update",
+            "url": "student/update/65e5f2d6d84c0fb06aa7965e",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-03-05T04:46:57.977Z",
+            "modified": "2024-03-05T05:30:01.326Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzaWQiOiI2NWU2YWFkYmJlMzI0ZDA2MWVjOGExZDYiLCJlbWFpbCI6ImNhcmxvc0BnbWFpbC5jb20iLCJuYW1lIjoiQ2FybG9zIiwicm9sZSI6IlNUVURFTlQiLCJpYXQiOjE3MDk2MTY1NjAsImV4cCI6MTcwOTYyNzM2MH0.8gz56oLrKQZfPWDMI2wSESGXuYtfSJOOCQA7PCxSUro"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Luis"
+                    }
+                ]
+            },
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "3edd97a1-57cf-4787-bcb9-36185b3bd28c",
+            "colId": "b606b3ec-9384-468d-8c4b-03df2f0fa699",
+            "containerId": "4b8edacd-cf35-460c-bd2a-c325a0e558ca",
+            "name": "add",
+            "url": "teacher/register",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-03-05T04:47:07.595Z",
+            "modified": "2024-03-05T05:32:30.176Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Luis"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Soto"
+                    },
+                    {
+                        "name": "age",
+                        "value": "32"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "65e5edc92c76e208da4edec4"
+                    },
+                    {
+                        "name": "email",
+                        "value": "luis@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "role",
+                        "value": "ADMIN"
+                    }
+                ]
+            },
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "c400f622-b5b9-4ea0-8959-59c52f699adb",
+            "colId": "b606b3ec-9384-468d-8c4b-03df2f0fa699",
+            "containerId": "4b8edacd-cf35-460c-bd2a-c325a0e558ca",
+            "name": "update",
+            "url": "teacher/update/65e6ae6e8ad0aee99c456ce8",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2024-03-05T04:47:16.946Z",
+            "modified": "2024-03-05T05:37:40.821Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aWQiOiI2NWU2YWU2ZThhZDBhZWU5OWM0NTZjZTgiLCJlbWFpbCI6Imx1aXNAZ21haWwuY29tIiwibmFtZSI6Ikx1aXMiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDk2MTY5OTQsImV4cCI6MTcwOTYyNzc5NH0.K--cF32D_E3PlGi7FNTU9nx7N7oIFyRvmwyrJNYQvUE"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Juan Jose"
+                    }
+                ]
+            },
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "0ebad263-3943-46b1-86cd-bc613af598d3",
+            "colId": "b606b3ec-9384-468d-8c4b-03df2f0fa699",
+            "containerId": "4b8edacd-cf35-460c-bd2a-c325a0e558ca",
+            "name": "delete",
+            "url": "teacher/delete/65e5f4a3445bd18af57e1ebe",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2024-03-05T04:47:32.805Z",
+            "modified": "2024-03-05T05:39:36.147Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aWQiOiI2NWU2YWU2ZThhZDBhZWU5OWM0NTZjZTgiLCJlbWFpbCI6Imx1aXNAZ21haWwuY29tIiwibmFtZSI6Ikx1aXMiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDk2MTY5OTQsImV4cCI6MTcwOTYyNzc5NH0.K--cF32D_E3PlGi7FNTU9nx7N7oIFyRvmwyrJNYQvUE"
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "e3a5231b-2311-4571-b8fc-1c5eee23853c",
+            "colId": "b606b3ec-9384-468d-8c4b-03df2f0fa699",
+            "containerId": "94613e92-58f7-4e1f-9836-6b9566313892",
+            "name": "LoginStudent",
+            "url": "student/login",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2024-03-05T05:19:27.613Z",
+            "modified": "2024-03-05T05:29:20.884Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "email",
+                        "value": "carlos@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "7dc1ae86-f710-4c57-a796-5cbb62599f73",
+            "colId": "b606b3ec-9384-468d-8c4b-03df2f0fa699",
+            "containerId": "94613e92-58f7-4e1f-9836-6b9566313892",
+            "name": "LoginTeacher",
+            "url": "teacher/login",
+            "method": "POST",
+            "sortNum": 130000,
+            "created": "2024-03-05T05:34:41.716Z",
+            "modified": "2024-03-05T05:36:34.012Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "email",
+                        "value": "luis@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2880/"
+        }
+    }
+}
